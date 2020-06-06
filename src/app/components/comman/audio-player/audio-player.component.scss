@@ -1,0 +1,164 @@
+ion-header{
+    ion-toolbar{
+        --background: #EFEFEF !important;
+        --background-color: #EFEFEF !important;
+        --ion-background-color:#EFEFEF !important;
+        .arrow-back{
+            padding-left: 40%;
+            // padding-top: 24px;
+        }
+    }
+}
+
+ion-content{
+    --background: #EFEFEF !important;
+    --background-color: #EFEFEF !important;
+    background-color: #EFEFEF;
+    ion-toolbar{
+        position: absolute; 
+        bottom: 0px; 
+        --background: #EFEFEF !important;
+        --background-color: #EFEFEF !important;
+        background-color: #EFEFEF;        
+    }
+    .power{
+        text-align: end;
+        margin-right: 19px;
+        ion-text{
+            font-size: 8px;
+            font-family: Arial regular;
+            .google-logo {
+                font-family: Catull,Sans-Serif;
+            }
+            .google-G { 
+                color:#0047F1; 
+            }
+            .google-o1 { 
+                color:#DD172C; 
+            }
+            .google-o2 { 
+                color:#F9A600; 
+            }
+            .google-g { 
+                color:#0047F1; 
+            }
+            .google-l { 
+                color:#00930E; 
+            }
+            .google-e { 
+                color:#E61B31; 
+            }
+        }
+    }
+    .txt{
+        text-align: center;
+        img{
+            padding: 0px 32px;
+        }
+    }
+    
+    .des-clt{
+        font-family: Lato;
+        font-size: 18px;
+        text-align: left;
+        h5{
+            // font-family: arimo;
+            margin:18px 17.3px 13.5px 18px;
+            color: rgba(0,0,0,0.47);
+            font-family: 'Arimo-Regular';
+        }
+        .bold{
+            font-weight: bold;
+            color: black;
+        }
+    }
+    .des-clt{
+        text-align: left;
+        hr{
+            border: 2px solid #44B200;
+            width: 148.04px;
+            margin-top: 19px;
+        }
+        .head-clt{
+            font-size: 25px;
+            font-family: Arimo;
+            font-weight: Bold;
+            font-style: italic;
+        }
+        .mrg-t{
+            margin-bottom: 27px;
+        }
+    }
+    .geral-clt{
+        margin-top: 56px;
+        .title{
+            font-family: Arimo;
+            font-size: 15px;
+            font-weight: 100;
+        }
+        .head_title{
+            font-family: Arimo;
+            font-size: 15px;
+            font-weight: bold;    
+            .title{
+                font-family: Helvetica Neue;
+                font-size: 18px;
+                font-weight: bold;
+                color: black;
+            }
+        }
+        .sub_title{
+            font-family: Arial;
+            font-size: 10px;
+        }
+    }
+    .player-des{
+        text-align: center;
+        ion-button{
+            height: 53px;
+            width: 53px;
+            --border-radius: 50%;
+            font-size: 15px;
+            --background: #44B200;
+        }
+    }
+    ion-card{
+        height: 58%;
+        margin-bottom: 3px;
+        box-shadow: none;
+        border-radius: 14px;
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+    .futer{
+        bottom: 0;
+        margin: 0px;
+        text-align: center;
+       h4{
+        font-family: Arial;
+        margin: 3px 0px;
+        font-weight: bold;
+       } 
+       p{
+        font-family: Arial Regular;
+        font-size: 13px;
+        margin-top: 7px;
+       }
+       .img{
+           height: 23px;
+           width: 27px;
+       }
+       .img2{
+        height: 27px !important;
+       }
+    }
+    ion-range{
+        --bar-background-color: #44B200;
+        --bar-background-active: #44B200;
+        --bar-height: 2px;
+        --height: 20px;
+        --knob-background: #44B200;
+        --knob-size: 12px;
+    }
+   
+}

@@ -1,0 +1,32 @@
+ion-content{
+    .txt-des{
+        text-align: center;
+        hr{
+            height: 0px;
+            border: 1px solid #44B200;
+            width: 148.04px;
+            margin-top: 19px;
+        }
+        .head-clt{
+            font-size: 25px;
+            font-family: Arimo;
+            font-weight: Bold;
+            font-style: italic;
+        }
+        .des-clt{
+            font-family: Lato;
+            font-size: 18px;
+            text-align: left;
+            h5{
+                font-family: Lato Regular;
+                margin: 18px 37px 0px 37px;
+            }
+            .bold{
+                font-weight: bold;
+            }
+        }
+        .mrg-t{
+            margin-bottom: 27px;
+        }
+    }
+}

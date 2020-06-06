@@ -1,0 +1,56 @@
+ion-content{
+    
+    
+
+    ion-slides{
+        margin-top: 10px;
+        ion-card{
+            margin: 0;
+        }
+        ion-card-content{
+            font-size: 22px;
+        }
+    }
+    .swiper-slide-active{
+        ion-card{
+            margin-top: 6px !important;
+        }
+        ion-card-content{
+            height: 181px;
+        }
+    }
+    .card-design{
+        height: 161px;
+        width: 271px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .green{
+        background-color: #44B200;
+    }
+    .yellow{
+        background-color:#E09900;
+    }
+    .blue{
+        background-color:#0C71C3;
+    }
+    .dark-blue{
+        background-color:#8300E9;
+    }
+    ion-card{
+        box-shadow: 1px 8px 20px -3px rgba(0,0,0,0.7);
+        margin-top: 14px !important; 
+        margin-bottom: 21px !important;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    ion-content{
+        .card-design{
+            width: 242px;
+        }
+    }
+}

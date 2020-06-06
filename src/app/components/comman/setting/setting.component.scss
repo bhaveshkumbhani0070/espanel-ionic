@@ -1,0 +1,55 @@
+ion-header{
+
+    .title{
+        font-family: arimo;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+ion-label{
+    margin-right: 0 !important;
+}
+.geral-clt{
+    margin-top: 56px;
+    .title{
+        font-family: Arimo;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .head_title{
+        font-family: Arimo;
+        font-size: 15px;
+        font-weight: bold;    
+    }
+}
+.more-clt{
+    margin-top: 67px;
+    .title{
+        font-family: Arimo;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .head_title{
+        font-family: Arimo;
+        font-size: 15px;
+        font-weight: bold;    
+    }
+}
+.footer-clt{
+    margin-top: 20px;
+    .logout-clt{
+        color:#FF0202;
+        font-family: Arimo;
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+
+ion-item{
+    ion-icon{
+        margin-right: 0px !important;
+    }
+}

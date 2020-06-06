@@ -1,0 +1,8 @@
+{
+  "name": "eSpanol",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "c532dafb"
+}

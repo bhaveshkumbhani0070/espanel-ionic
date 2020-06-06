@@ -1,0 +1,51 @@
+
+<ion-content>
+  <app-header></app-header>
+  
+<!-- start app-slide -->
+  
+  <!-- <app-slide></app-slide> -->
+  <ion-slides [options]="slideOptsOne" #slideWithNav  (ionSlideDidChange)="SlideDidChange()">
+    <ion-slide>
+      <ion-card (click)="moveCard(0)">
+        <ion-card-content class="ion-text-uppercase card-design green">
+          conversaciones
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card (click)="moveCard(1)">
+        <ion-card-content class="ion-text-uppercase card-design yellow">
+          HISTORIAS
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card (click)="moveCard(2)">
+        <ion-card-content class="ion-text-uppercase card-design blue">
+          Noticias
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card (click)="moveCard(3)">
+        <ion-card-content class="ion-text-uppercase card-design dark-blue">
+          traducir
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+   
+  </ion-slides>
+  <!-- ed app-slide -->
+
+  <app-title [title]="title"></app-title>
+  
+  <ion-label class="mai-url">Enter Any URL</ion-label>
+  <ion-input placeholder="www.lo-que-sea.com.co"></ion-input>
+  <ion-button end expand="block" color="favorite" class="login-button">GO</ion-button>
+  <div class="ma-header">
+    <h3 class="head-tit">Top Stories</h3>
+    <span class="head-su-tit">Chosen by the Español en 3000 editors.</span>
+  </div>
+  <app-lable-card  [items]="allItems" [openDetailOrAudio]="'audio'"></app-lable-card>
+</ion-content>

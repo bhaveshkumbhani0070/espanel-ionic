@@ -1,0 +1,56 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-button color="dark" (click)="closeModal()">
+          <ion-icon name="close-outline"></ion-icon>
+          </ion-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="txt g-color">
+    <img src="../../../assets/img/EP004-thumbnail-1080x675.png" class="slider-img">
+  </div>
+  <div class="g-color">
+    <ion-text class="des-clt">
+      <h5 class="bold">
+        El Metro de Medellín
+      </h5>
+      <h5>
+        ¡Qué más pues! Ave maría, expresiones muy paisas, muy colombianas, tanto como lo es el metro de Medellín que cada año atrae turistas, atrae personas de todas partes del mundo, que es reconocido también en todas partes como un ejemplo de orden, de limpieza, de buen funcionamiento, es una de las cosas de las cuales se habla en todo el mundo en respecto de Medellín.
+      </h5>
+      <h5>
+        Acento: Colombiano 🇨🇴
+      </h5>
+   </ion-text>
+   <div class="list card geral-clt">
+  
+    <ion-item lines="full" (click)="audioPlay()">
+      <ion-label slot="start" class="head_title">
+        <p class="title">
+          Conversación
+        </p> 
+        <p>
+          16 Minutos, 35 Segundos
+        </p>
+      </ion-label>
+      <img slot="end" src="../../../../assets/img/Icon ionic-ios-arrow-forward.png" />
+    </ion-item>
+    <ion-item lines="full" (click)="audioPlay()">
+      <ion-label slot="start" class="head_title">
+        <p class="title">
+          Mini Lección
+        </p> 
+        <p>
+          16 Minutos, 35 Segundos
+        </p>
+      </ion-label>
+      <img slot="end" src="../../../../assets/img/Icon ionic-ios-arrow-forward.png" />
+    </ion-item>
+  </div>
+  </div>
+
+
+</ion-content>

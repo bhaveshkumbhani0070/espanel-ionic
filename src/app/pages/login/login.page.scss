@@ -1,0 +1,74 @@
+ion-header{
+    ion-toolbar{
+        ion-icon{
+            height: 38px;
+            width: 29px;
+        }
+        img{
+            margin: 14px 0px 0px 14px;
+        }
+    }
+}
+ion-content {
+    --overflow: hidden;
+}
+.back-button{
+    font-size: 34px;
+}
+
+.login-button{
+    margin: 10px 18px;
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    right: 0;
+}
+.email_text{
+    font-family: Arimo;
+    font-size: 25px;
+    font-weight: bold;
+}
+.center-text{
+    height: 21%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 24px;
+}
+  
+.ion-color-favorite {
+    --ion-color-base: var(--ion-color-new);
+    --ion-color-base-rgb: var(--ion-color-new-rgb);
+    --ion-color-contrast: var(--ion-color-new-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-new-contrast-rgb);
+    --ion-color-shade: var(--ion-color-new-shade);
+    --ion-color-tint: var(--ion-color-new-tint);
+    // width: 341px;
+    height: 54px;
+    font-family: arimo;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+ion-input{
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: solid 1px #707070;
+    background-color: #EFEFEF;
+    height: 68px;
+    width: 90%;
+    
+    margin: 0 auto;
+    font-size: 24px !important;
+    font-family: Arial !important;
+    --padding-start: 22px !important;
+    --padding-top: 17px !important;
+    --padding-bottom: 17px !important;
+    
+}
+
+.native-input{
+    padding: 15px !important;
+}

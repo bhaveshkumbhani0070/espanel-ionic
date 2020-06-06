@@ -1,0 +1,50 @@
+<ion-tabs (ionTabsDidChange)="tabchange()">
+  <div class="audioPlayer" *ngIf="playerStatus">
+    <ion-row>
+      <ion-col size="2">
+        <img src="../../assets/img/Icon ionic-ios-arrow-up.png" (click)="audioPlay()"/>
+      </ion-col>
+      <ion-col size="8" class="cent">
+        <h5>El metro de Medellín</h5>
+        <p>00:23 / 03:08</p>
+      </ion-col>
+      <ion-col size="2">
+        <ion-icon name="pause-circle" (click)="pause()" class="player-des"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </div>
+  <ion-tab-bar slot="bottom"  (ionChange)="tabChange($event)">
+    <ion-tab-button tab="home" (click)="changeHome()">
+      <img  [src]="home" />
+      <ion-label class="ion-text-uppercase">INICIO</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="conversaciones" (click)="changeConversaciones()">
+      <img  [src]="conversaciones" />
+      <ion-label class="ion-text-uppercase">Conversaciones</ion-label>
+    </ion-tab-button>
+    
+    <ion-tab-button tab="historias" (click)="changehistorias()">
+      <img  [src]="historias" />
+      <ion-label class="ion-text-uppercase">Historias</ion-label>
+    </ion-tab-button>
+    
+    <ion-tab-button tab="noticias" (click)="changeNoticias()">
+      <img  [src]="noticias" />
+      <ion-label class="ion-text-uppercase">Noticias</ion-label>
+    </ion-tab-button>
+    
+    <!-- <ion-tab-button tab="traducir" (click)="changeTraducir()">
+      <img  [src]="traducir" />
+      <ion-label class="ion-text-uppercase">Traducir</ion-label>
+    </ion-tab-button> -->
+    
+    
+    
+    <!-- <ion-tab-button tab="tab3">
+      <ion-icon name="square"></ion-icon>
+      <ion-label>Tab 3</ion-label>
+    </ion-tab-button> -->
+  </ion-tab-bar>
+
+</ion-tabs>

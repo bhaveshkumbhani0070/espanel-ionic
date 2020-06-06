@@ -1,0 +1,14 @@
+
+  <ion-list *ngFor="let data of items" lines="none">
+    <ion-item  (click)="openDetails(data)" >
+      <ion-thumbnail slot="start">
+        <img [src]="data.img">
+      </ion-thumbnail>
+      
+      <ion-label class="ion-text-wrap">
+        <h2>{{data.title}}</h2>
+        <p>{{data.des}}</p>
+      </ion-label>
+    </ion-item>
+    <hr />
+  </ion-list>
