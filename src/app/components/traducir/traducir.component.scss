@@ -1,0 +1,111 @@
+    .mai-url{
+        font-family: arimo !important;
+        font-size: 25px;
+        text-align: center;
+        margin: 12px 23px;
+        display: flex;
+        justify-content: center;
+    }
+    ion-input{
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        border: solid 1px #707070;
+        background-color: #EFEFEF;
+        height: 65px;
+        width: 90%;
+        margin-left: 19px;
+        font-size: 24px !important;
+        font-family: Arial !important;
+        margin-bottom: 20px;
+        // padding-left: 22px !important;
+        padding-left: 18px !important;
+        padding-top: 18px !important;
+        padding-bottom: 18px !important;
+        
+        input{
+        }
+    }
+    .login-button{
+        margin: 10px 18px;
+        // position: fixed;
+        left: 0;
+        // bottom: 10px;
+        right: 0;
+    }
+    .ma-header{
+        margin-bottom: 10px;
+        .head-tit{
+            color: #E09900;
+            margin-left: 20px;
+            font-family: Arimo;
+        }
+        .head-su-tit{
+            font-family: arial !important; 
+            margin-left: 20px;
+            font-size: 14px;
+        }
+    }
+    ion-slides{
+        margin-top: 10px;
+        ion-card{
+            margin: 0;
+        }
+        ion-card-content{
+            font-size: 22px;
+        }
+    }
+    .swiper-slide-active{
+        ion-card{
+            border-radius: 17px;
+            margin-top: 6px !important;
+        }
+        ion-card-content{
+            height: 181px;
+        }
+    }
+    .card-design{
+        height: 161px;
+        width: 271px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .green{
+        background-color: #44B200;
+    }
+    .yellow{
+        background-color:#E09900;
+    }
+    .blue{
+        background-color:#0C71C3;
+    }
+    .dark-blue{
+        background-color:#8300E9;
+    }
+    .ion-color-favorite {
+        --ion-color-base: var(--ion-color-new);
+        --ion-color-base-rgb: var(--ion-color-new-rgb);
+        --ion-color-contrast: var(--ion-color-new-contrast);
+        --ion-color-contrast-rgb: var(--ion-color-new-contrast-rgb);
+        --ion-color-shade: var(--ion-color-new-shade);
+        --ion-color-tint: var(--ion-color-new-tint);
+        height: 54px;
+        font-family: arimo;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    ion-card{
+        box-shadow: 1px 8px 20px -3px rgba(0,0,0,0.7);
+        margin-top: 14px !important;
+        margin-bottom: 21px !important;
+    }
+
+    @media only screen and (max-width: 320px) {
+        ion-content{
+            .card-design{
+                width: 242px;
+            }
+        }
+    }

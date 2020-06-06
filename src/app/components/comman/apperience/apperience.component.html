@@ -1,0 +1,35 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-button color="dark" (click)="closeModal()">
+          <!-- <img src="../../../../assets/img/Icon ionic-ios-arrow-back.png" /> -->
+          <ion-icon name="chevron-back-outline" ></ion-icon>
+          <!-- <ion-icon name="close-outline"></ion-icon> -->
+        </ion-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-radio-group  allow-empty-selection [value]="mode" name="radio-group" (ionChange)="changemode($event)">
+      <!-- <ion-list-header>
+        <ion-label>Fruit</ion-label>
+      </ion-list-header> -->
+      <ion-item>
+        <ion-label>Automatic</ion-label>
+        <ion-radio slot="end" color="success" value="auto" id="Automatic"></ion-radio>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label>Dark</ion-label>
+        <ion-radio slot="end" color="success" value="dark" id="Dark"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Light</ion-label>
+        <ion-radio slot="end" color="danger" value="light" id="Light"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,92 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-button color="dark" (click)="closeModal()">
+          <ion-icon name="close-outline"></ion-icon>
+          </ion-button>
+    </ion-buttons>
+    <img class="arrow-back" (click)="minModal()" src="../../../../assets/img/Icon ionic-ios-arrow-down.png" /> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <div class="txt g-color">
+    <img src="../../../assets/img/slide01.png" class="slider-img">
+  </div> -->
+    <ion-card>
+      <div class="g-color">
+        <ion-text class="des-clt">
+          <h5 class="bold">
+            El Metro de Medellín
+          </h5>
+          <h5>
+            ¡Qué más pues! Ave maría, expresiones muy paisas, muy colombianas, tanto como lo es el metro de Medellín que cada año atrae turistas, atrae personas de todas partes del mundo, que es reconocido también en todas partes como un ejemplo de orden, de limpieza, de buen funcionamiento, es una de las cosas de las cuales se habla en todo el mundo en respecto de Medellín.
+          </h5>
+          <h5>
+            Acento: Colombiano 🇨🇴
+          </h5>
+       </ion-text> 
+      </div>
+    </ion-card>
+    
+  <div class="power">
+    <ion-text>
+      Powered by
+    </ion-text>
+    <ion-text>
+      <span class="google-logo"><span class="google-G">G</span><span class="google-o1">o</span><span class="google-o2">o</span><span class="google-g">g</span><span class="google-l">l</span><span class="google-e">e</span></span> 
+    </ion-text>
+    <ion-text> Translate</ion-text>
+  </div>
+  <!-- <ion-footer> -->
+    <ion-toolbar>
+      <div class="player-des">
+        <!-- <img *ngIf="!isPlayi" src="../../../../assets/img/Icon ionic-ios-play-circle.png" (click)="play()"/> -->
+        <ion-button (click)="play()" *ngIf="!isPlayi">
+          <ion-icon name="play-sharp"></ion-icon>
+        </ion-button>
+        
+          <ion-button (click)="pause()" *ngIf="isPlayi">
+            <ion-icon name="pause-outline" ></ion-icon>
+          </ion-button> 
+      </div>
+      <ion-row>
+        <ion-col size="12">
+          <ion-range  #range  [(ngModel)]="progress" max="100" (touchend)="seek()" (mouseup)="seek()" mode="md">
+            <ion-label slot="start">{{ru_time}}</ion-label>
+            <ion-label slot="end">-{{total_time}}</ion-label>
+          </ion-range>
+        </ion-col>
+      </ion-row>
+      <ion-row class="futer">
+        <ion-col size="3">
+          <ion-text (click)="speedUp(speed)">
+            <h4>{{speed}}x</h4>
+            <p>Speed</p>
+          </ion-text>
+        </ion-col>
+        <ion-col size="3">
+          <ion-text>
+            <img src="../../../../assets/img/translate.png" class="img"/>
+            <p>Translate</p>
+          </ion-text>
+        </ion-col>
+        <ion-col size="3">
+          <ion-text>
+            <img src="../../../../assets/img/down-arrow.png" class="img"/>
+            <p>Download</p>
+          </ion-text>
+        </ion-col>
+        <ion-col size="3">
+          <ion-text>
+            <img src="../../../../assets/img/Icon ionic-ios-heart.png" class="img"/>
+            <p>Favorite</p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+      
+    </ion-toolbar>
+  <!-- </ion-footer> -->
+
+  
+</ion-content>

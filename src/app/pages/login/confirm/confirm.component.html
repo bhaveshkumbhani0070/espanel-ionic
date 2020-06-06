@@ -1,0 +1,34 @@
+
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+        <!-- <img src="../../../assets/img/ico/Icon ionic-ios-arrow-back.png" [routerLink]="['/splash/login']"/> -->
+        <ion-icon name="chevron-back-outline" [routerLink]="['/splash/login']"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contentdata"  fullscreen="true"  >
+  <ion-label class="ion-text-wrap">
+    <ion-text class="ion-text-center center-text">
+      <h2 class="email_text">Confirmation Code</h2>
+    </ion-text>
+    <ion-text class="ion-text-center su-text">
+      <span class="cotex">
+        <p>No one needs another password…</p> 
+        <p>We have sent an access code to your email.</p>
+        <p>Please enter it below.</p>
+      </span>
+    </ion-text> 
+    <div class="confirm-txt">
+      <ion-input maxlength="1" tabindex="1" (keyup)="moveFocus(b)" ></ion-input>
+      <ion-input maxlength="1" tabindex="2" #b (keyup)="moveFocus(c)"></ion-input>
+      <ion-input maxlength="1" tabindex="3" #c (keyup)="moveFocus(d)"></ion-input>
+      <ion-input maxlength="1" tabindex="4" #d (keyup)="login()"></ion-input>
+    </div>
+    
+    <ion-text class="ion-text-center button-text sendCode">
+      <span>Didn’t receive one?</span> <a> Resend code.</a>
+    </ion-text>
+  </ion-label>
+
+  <!-- <ion-button end expand="block" color="favorite" class="login-button" (click)="login()" >NEXT</ion-button> -->
+</ion-content>

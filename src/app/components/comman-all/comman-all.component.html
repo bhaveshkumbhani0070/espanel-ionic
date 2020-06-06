@@ -1,0 +1,42 @@
+<app-header></app-header>
+
+<ion-content>
+  <!-- start app-slide -->
+  <!-- <app-slide></app-slide> -->
+  <ion-slides [options]="slideOptsOne" #slideWithNav (ionSlideDrag)='slidernext($event)'>
+    <ion-slide>
+      <ion-card (click)="moveCard(0)">
+        <ion-card-content class="ion-text-uppercase card-design green">
+          conversaciones
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card (click)="moveCard(1)">
+        <ion-card-content class="ion-text-uppercase card-design yellow">
+          HISTORIAS
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card (click)="moveCard(2)">
+        <ion-card-content class="ion-text-uppercase card-design blue">
+          Noticias
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card (click)="moveCard(3)">
+        <ion-card-content class="ion-text-uppercase card-design dark-blue">
+          traducir
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+   
+  </ion-slides>
+  <!-- ed app-slide -->
+
+  <app-title [title]="title"></app-title>
+  <app-lable-card  [items]="allItems" [openDetailOrAudio]="'detail'"></app-lable-card>
+    
+</ion-content>

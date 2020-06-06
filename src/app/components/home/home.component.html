@@ -1,0 +1,116 @@
+<ion-content  no-bounce>
+    <ion-header translucent="false"  class="ion-no-border">
+      <ion-toolbar>
+        <img  src="../../../assets/img/small_logo.png" class="headerImg"/>
+        <ion-buttons slot="end" >
+            <ion-menu-button class="header-button">
+              <img src="../../../assets/img/menu.png" />
+              <!-- <ion-icon name="menu-outline"></ion-icon> -->
+            </ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <p class="home-title green">NUEVO CONTENIDO</p>
+
+    <img src="../../../assets/img/EP004-thumbnail-1080x675.png" class="slider-img">
+  <!-- <ion-slides [options]="slideOptsOne" #slideWithNav  (ionSlideDidChange)="SlideDidChange(slideWithNav)">
+    <ion-slide >
+    </ion-slide>
+    <ion-slide >
+      <img src="../../../assets/img/slide01.png" class="slider-img">
+    </ion-slide>
+    <ion-slide >
+      <img src="../../../assets/img/slide01.png" class="slider-img">
+    </ion-slide>
+  </ion-slides> -->
+ <p class="main_title">El Metro de Medellín</p>
+
+ <div class="mai-ottom">
+    <div class="header-text ion-text-uppercase setpadding">
+      <ion-label class="home-title">conversaciones</ion-label>
+      <ion-label class="home-right" (click)="changeTa('conversaciones')">ver todos</ion-label>
+    </div>
+    <ion-slides class="su_slide" [options]="slideOptsTwo" #slideWithNav1 (ionSlideReachEnd)='changeslider($event)'>
+    <ion-slide *ngFor="let slide of totalSlides;let i=index" (click)="audioPlay('detail')">
+        <img src="{{slide.img}}" class="su_slider-img">
+        <ion-label class="su_title">{{slide.content}}</ion-label>
+    </ion-slide>
+    <!-- <ion-slide (click)="audioPlay('detail')">
+      <img src="../../../assets/img/IMG_20171006_140629-1.png" class="su_slider-img">
+      <ion-label class="su_title">Todo Tiempo pasado fue mejor</ion-label>
+    </ion-slide>
+    <ion-slide (click)="audioPlay('detail')">
+      <img src="../../../assets/img/ep015-thumbnail-1-1.png" class="su_slider-img">
+      <ion-label class="su_title">Todo Tiempo pasado fue mejor</ion-label>
+    </ion-slide>
+    <ion-slide (click)="audioPlay('detail')">
+      <img src="../../../assets/img/ep015-thumbnail-1-1.png" class="su_slider-img">
+      <ion-label class="su_title">Todo Tiempo pasado fue mejor</ion-label>
+    </ion-slide> -->
+  </ion-slides>
+ </div>
+<div class="mai-ottom">
+  <div class="header-text ion-text-uppercase setpadding">
+    <ion-label class="home-title">HISTORIAS</ion-label>
+    <ion-label class="home-right" (click)="changeTa('historias')">ver todos</ion-label>
+  </div>
+  <ion-slides class="su_slide" [options]="slideOptsTwo" #slideWithNav  (ionSlideDidChange)="SlideDidChange(slideWithNav)">
+  <ion-slide (click)="audioPlay('audio')">
+      <img src="../../../assets/img/Thumbnail-EP009.png" class="su_slider-img">
+      <ion-label class="su_title">Todo Tiempo pasado fue mejor</ion-label>
+  </ion-slide>
+  <ion-slide (click)="audioPlay('audio')">
+    <img src="../../../assets/img/IMG_20171006_140629-1.png" class="su_slider-img">
+    <ion-label class="su_title">Todo Tiempo pasado fue mejor</ion-label>
+  </ion-slide>
+  <ion-slide (click)="audioPlay('audio')">
+    <img src="../../../assets/img/ep015-thumbnail-1-1.png" class="su_slider-img">
+    <ion-label class="su_title">Todo Tiempo pasado fue mejor</ion-label>
+  </ion-slide>
+</ion-slides>
+</div>
+
+<div class="mai-ottom">
+  <div class="header-text ion-text-uppercase setpadding">
+    <ion-label class="home-title">Noticias</ion-label>
+    <ion-label class="home-right" (click)="changeTa('noticias')">ver todos</ion-label>
+  </div>
+  <ion-slides class="su_slide" [options]="slideOptsTwo" #slideWithNav  (ionSlideDidChange)="SlideDidChange(slideWithNav)">
+  <ion-slide (click)="audioPlay('audio')">
+      <img src="../../../assets/img/Thumbnail-EP009.png" class="su_slider-img">
+      <ion-label class="su_title">Todo Tiempo pasado fue mejor</ion-label>
+  </ion-slide>
+  <ion-slide (click)="audioPlay('audio')">
+    <img src="../../../assets/img/IMG_20171006_140629-1.png" class="su_slider-img">
+    <ion-label class="su_title">Todo Tiempo pasado fue mejor</ion-label>
+  </ion-slide>
+  <ion-slide (click)="audioPlay('audio')">
+    <img src="../../../assets/img/ep015-thumbnail-1-1.png" class="su_slider-img">
+    <ion-label class="su_title">Todo Tiempo pasado fue mejor</ion-label>
+  </ion-slide>
+</ion-slides>
+</div>
+
+<div class="mai-ottom">
+  <div class="header-text ion-text-uppercase setpadding">
+    <ion-label class="home-title">Mis favoritos </ion-label><ion-icon name="heart-sharp"></ion-icon>
+    <ion-label class="home-right" >ver todos</ion-label>
+  </div>
+  <!-- (click)="changeTa('traducir')" -->
+  <ion-slides class="su_slide" [options]="slideOptsTwo" #slideWithNav  (ionSlideDidChange)="SlideDidChange(slideWithNav)">
+  <ion-slide (click)="audioPlay('audio')">
+      <img src="../../../assets/img/Thumbnail-EP009.png" class="su_slider-img">
+      <ion-label class="su_title">Todo Tiempo pasado fue mejor</ion-label>
+  </ion-slide>
+  <ion-slide (click)="audioPlay('audio')">
+    <img src="../../../assets/img/IMG_20171006_140629-1.png" class="su_slider-img">
+    <ion-label class="su_title">Todo Tiempo pasado fue mejor</ion-label>
+  </ion-slide>
+  <ion-slide (click)="audioPlay('audio')">
+    <img src="../../../assets/img/ep015-thumbnail-1-1.png" class="su_slider-img">
+    <ion-label class="su_title">Todo Tiempo pasado fue mejor</ion-label>
+  </ion-slide>
+</ion-slides>
+</div>
+
+</ion-content>

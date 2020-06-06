@@ -1,0 +1,29 @@
+ion-slides{
+    margin-top: 10px;
+    ion-card{
+        margin: 0;
+    }
+    ion-card-content{
+        font-size: 22px;
+    }
+}
+.card-design{
+    height: 181px;
+    width: 271px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.green{
+    background-color: #44B200;
+}
+.yellow{
+    background-color:#E09900;
+}
+.blue{
+    background-color:#0C71C3;
+}
+.dark-blue{
+    background-color:#8300E9;
+}

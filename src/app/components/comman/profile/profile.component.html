@@ -1,0 +1,50 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-button color="dark" (click)="closeModal()">
+          <ion-icon name="close-outline"></ion-icon>
+          </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button color="dark" (click)="save()">
+          SAVE
+        </ion-button>
+    </ion-buttons>
+   <!-- <ion-title slot="start">Create Pin</ion-title>  -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="list card">
+    <ion-item class="profile-item" lines="none">
+      <div class="profile-picture big-profile-picture">
+        <div class="img_co">
+          <ion-icon name="camera"></ion-icon>    
+          <ion-label position="fixed" class="head_title">CHANGE</ion-label>
+        </div>
+      </div>
+      <!-- <h2 class="profile-name dark">{{user.name}}</h2>
+      <div class="profile-info">{{user.info}}</div> -->
+    </ion-item>
+
+    <ion-item >
+      <ion-label class="title">PROFILE</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label position="fixed" class="head_title">First Name</ion-label>
+      <ion-input placeholder="First Name" class="head_input"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="fixed" class="head_title">Last Name</ion-label>
+      <ion-input placeholder="Last Name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="fixed" class="head_title">City</ion-label>
+      <ion-input placeholder="City"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="fixed" class="head_title">Email</ion-label>
+      <ion-input placeholder="me@gmail.com"></ion-input>
+    </ion-item>
+  </div>
+</ion-content>

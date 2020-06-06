@@ -1,0 +1,25 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+        <!-- <img src="../../../assets/img/ico/Icon ionic-ios-arrow-back.png" [routerLink]="['/splash']"/> -->
+        <ion-icon name="chevron-back-outline" [routerLink]="['/splash']"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+<!-- 
+<ion-content  fullscreen="true" >
+  <ion-label class="ion-text-wrap">
+    <ion-text class="ion-text-center center-text">
+      <h2 class="email_text">What's your email?</h2>
+    </ion-text>
+    <ion-input placeholder="Email" type="text" item-right class="right" clearInput [(ngModel)]="email"></ion-input>
+  </ion-label> -->
+
+  <ion-content  fullscreen="true" no-bounce>
+    <ion-label class="ion-text-wrap">
+      <ion-text class="ion-text-center center-text">
+        <h2 class="email_text">What's your email?</h2>
+      </ion-text>
+      <ion-input placeholder="Email" type="text" [(ngModel)]="email"></ion-input>
+    </ion-label>
+   
+    <ion-button end expand="block" color="favorite" class="login-button hide-on-keyboard-open txt-space" (click)="login()" >NEXT</ion-button>
+</ion-content>

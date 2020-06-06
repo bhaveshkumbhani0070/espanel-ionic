@@ -1,0 +1,19 @@
+ion-toolbar{
+    text-align: center;
+    img{
+        margin: 4% 0px 0px 10%;
+        width: 79px;
+        height: 25px;
+    }
+    ion-icon{
+        font-size: 33px;
+    }
+    ion-buttons{
+        ion-menu-button{
+            img{
+                width: 20px;
+                height: 13px;
+            }
+        }
+    }
+}

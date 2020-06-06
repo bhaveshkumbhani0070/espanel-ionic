@@ -1,0 +1,65 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-button color="dark" (click)="closeModal()">
+          <ion-icon name="close-outline"></ion-icon>
+        </ion-button>
+    </ion-buttons>
+   <ion-title class="title">SETTINGS</ion-title> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="list card geral-clt">
+
+    <ion-item lines="full">
+      <ion-label class="title">GENERAL</ion-label>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label slot="start" class="head_title">Subscription</ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label slot="start" class="head_title">Notifications</ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label slot="start" class="head_title">Change Email Address</ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-item>
+    <ion-item lines="full" (click)="GoToApperience()">
+      <ion-label slot="start"  class="head_title">Appearance</ion-label>
+      <!-- <ion-toggle   (ionChange)="changemode($event)" slot="end"></ion-toggle> -->
+      <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-item>
+  </div>
+
+  <div class="list card more-clt">
+
+    <ion-item lines="full">
+      <ion-label class="title">MORE</ion-label>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label slot="start" floating class="head_title">About Español en 3000</ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label slot="start" class="head_title">FAQ</ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-item>
+    <ion-item lines="full" (click)="GoToTerms()">
+      <ion-label slot="start" class="head_title">Terms</ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-item>
+    <ion-item lines="full" (click)="GoToPrivacy()">
+      <ion-label slot="start" class="head_title">Privacy</ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-item>
+   
+  </div>
+  <div class="footer-clt">
+    <ion-button fill="clear" expand="full" (click)="logout()">
+      <ion-label  class="logout-clt">LOG OUT</ion-label>
+    </ion-button>
+  </div>
+</ion-content>
